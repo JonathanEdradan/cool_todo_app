@@ -5,6 +5,8 @@
 		<div>Content: <%= task.content %> </div>
 		<div>Complete: <%= task.complete %> </div>
 		<div>Created At: <%= task.created_at %> </div>
+		<div>Id: <%= task.id %> </div>
+		<%= button_to "Delete", task, method: :delete %>
 	</li>
 	<% end %>
 </ul>
