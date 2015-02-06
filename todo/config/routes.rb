@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  get 'tasks/index'
+
+  root to: 'site#index'
+  get '/signup',  to: 'site#signup'
+  get '/login',   to: 'site#login'
+  get '/contact', to: 'site#contact'
+  get '/about',   to: 'site#about'
+
+  # Also just to keep it RESTful
+  get '/tasks',   to: "tasks#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -8,7 +8,7 @@
 * last_name:string
 * **has_many** Todos
 
-###Todo
+###Task
 * content:string
 * complete:boolean
 * created_at:datetime
@@ -26,7 +26,7 @@
 * index
 * create
 
-###Todo
+###Tasks
 * index
 * create
 * edit

@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Task.create({content: "This todo sux", complete: false}) 
+Task.create({content: "I'm really cool", complete: false})
