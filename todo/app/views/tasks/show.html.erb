@@ -4,4 +4,4 @@
 <%= @meow_mix.complete %><br>
 <%= @meow_mix.created_at %><br>
 <%= @meow_mix.id %><br>
-<%= button_to "Delete", @meow_mix, method: :delete %>
+<%= button_to "Delete", destroy_task_path(@user, @meow_mix), method: :delete %>

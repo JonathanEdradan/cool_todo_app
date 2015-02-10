@@ -1,4 +1,4 @@
-<h1>Tasks#index</h1>
+<h1>Your Tasks</h1>
 <ul>
 	<% @tasks.each do |task| %>
 	<li>
@@ -6,7 +6,7 @@
 		<div>Complete: <%= task.complete %> </div>
 		<div>Created At: <%= task.created_at %> </div>
 		<div>Id: <%= task.id %> </div>
-		<%= button_to "Delete", task, method: :delete %>
+		<%= button_to "Delete", destroy_task_path(@user,task), method: :delete %>
 	</li>
 	<% end %>
 </ul>
